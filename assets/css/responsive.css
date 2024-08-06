@@ -1,0 +1,64 @@
+/* PC */
+@media (min-width: 992px) {
+}
+
+/* Tablet / Mobile */
+@media (max-width: 991.98px) {
+    /* 1. An navbar */
+    .navbar {
+        display: none;
+    }
+
+    /* 2. Dua logo vao giua */
+    .header-top {
+        position: relative;
+    }
+
+    .header__logo {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    /* 3. Can lai vi tri menu icon */
+    .menu-header__icon {
+        position: absolute;
+        top: 38px;
+        left: 26px;
+        width: 26px;
+        height: 26px;
+        color: #fff;
+    }
+
+    /* 4. overlay */
+    .menu-overlay {
+        position: fixed;
+        background: rgba(0, 0, 0, 0.3);
+        inset: 0;
+        z-index: 1;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.5s;
+    }
+
+    /* 5. kiem tra neu checkbox duoc check thi hien ovarlay*/
+    .menu-checkbox:checked ~ .menu-overlay {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 991.98px) {
+}
+
+/* Mobile */
+@media (max-width: 767.98px) {
+}
+
+/* ======= */
+.hero,
+.footer,
+main {
+    display: none;
+}
